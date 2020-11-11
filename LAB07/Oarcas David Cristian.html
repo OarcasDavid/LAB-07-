@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+<style>
+
+img {
+border-radius: 15%;
+opacity: 0.8;
+width : 200px;
+margin: 5px;
+border: 1px solid #ccc;
+height : 200px; }
+h1 {color : blue;
+font-size : 35px; }
+P { color : red;
+font-size: 25px; }
+body {
+  background-color: lightblue;
+}
+table, th, td {
+  border: 1px solid black;
+}
+ul {
+  background: #3399ff;
+  padding: 20px;
+}
+ul li {
+  background: #cce5ff;
+  margin: 5px;
+}
+#borderimg {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(David.jpg) 30 round;
+}
+</style>
+</head>
+<script>
+
+function veziViitor()
+{
+document.getElementById("demo1").innerHTML = "ing. Oarcas David Cristian";
+document.getElementById("demo2").innerHTML = "dave_criss01@yahoo.com";
+document.getElementById("poza").src= "David2.jpg";
+document.getElementById("poza").style.border= "5px";
+document.getElementById("poza").style.opacity= "0.6";
+document.body.style.backgroundColor = "yellow";
+var tabel = document.getElementById('tabel');
+table.rows[0].cells[0].innerHTML = "IA";
+table.rows[1].cells[0].innerHTML = "Programare";
+table.rows[2].cells[0].innerHTML = "Electronica";
+document.getElementById("table").style.color="green";
+document.getElementById("H1").innerHTML="PROFIL";
+
+}
+
+function arataVarsta()
+{
+var azi=new Date;
+var varstaMea;
+var anNastere=document.getElementById("varsta").innerHTML;
+var anCurent=azi.getFullYear();
+varstaMea = anCurent - parseInt(anNastere);
+document.getElementById("varsta").innerHTML=varstaMea;
+}
+
+
+</script>
+
+
+<body>
+
+
+<h1 id="H1">MY PROFILE</h1>
+
+<p id="demo1">Oarcas David Cristian</p>
+<p id="demo2">Email: oarcasdavid@yahoo.com</p>
+<img id="poza" src="David.jpg">
+<button type="button" onclick="veziViitor()">Alta viata</button>
+<p>Telefon: 0740974878</p>
+<p onmouseover="arataVarsta()" id="varsta">19</p>
+<p>"Educatia nu este o pregatire pentru viata , este insusi viata"</p>
+<br>
+<p><b>MATERII PREFERATE:</p></b>
+<table id="table" style="width:50%">
+  <tr>
+    <td>Informatica aplicata</td>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3106.pdf"</td>https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3106.pdf
+  </tr>
+  <tr>
+    <td> Programarea calculatoarelor si limbaje de programare</td>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3104.pdf"</td>https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3104.pdf
+  </tr>
+  <tr>
+    <td>Dispozitive electronice</td>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3112.pdf"</td>https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3112.pdf
+  </tr>
+</table>
+<p><b>HOBBY-URI:</p></b>
+<ul>
+  <li>Football</li>
+  <li>Sala de sport</li>
+  <li>Jocuri video</li>
+</ul>
+<p><a href="file:///C:/Users/gamin/Desktop/CATALOG/CatalogETTI.html">Back</a></p>
+
+</body>
+</html>
